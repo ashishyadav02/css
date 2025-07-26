@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync - Study Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">StudySync</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline">Home</a></li>
+                    <li><a href="#notes" class="hover:underline">Notes</a></li>
+                    <li><a href="#quizzes" class="hover:underline">Quizzes</a></li>
+                    <li><a href="#resources" class="hover:underline">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 bg-blue-500 text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Welcome to StudySync</h2>
+            <p class="text-lg mb-6">Your one-stop platform for study materials, notes, and quizzes to excel in your studies.</p>
+            <a href="#resources" class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200">Explore Resources</a>
+        </div>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Study Notes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Mathematics</h3>
+                    <p>Comprehensive notes on Algebra, Calculus, and Geometry.</p>
+                    <a href="#" class="text-blue-600 hover:underline">View Notes</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Science</h3>
+                    <p>Detailed summaries on Physics, Chemistry, and Biology.</p>
+                    <a href="#" class="text-blue-600 hover:underline">View Notes</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">History</h3>
+                    <p>Key events, timelines, and historical analysis.</p>
+                    <a href="#" class="text-blue-600 hover:underline">View Notes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quizzes Section -->
+    <section id="quizzes" class="py-12 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Interactive Quizzes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Math Quiz</h3>
+                    <p>Test your knowledge with our Algebra and Calculus quizzes.</p>
+                    <button onclick="startQuiz('Math')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Quiz</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Science Quiz</h3>
+                    <p>Challenge yourself with Physics and Chemistry questions.</p>
+                    <button onclick="startQuiz('Science')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">External Resources</h2>
+            <ul class="list-disc list-inside mx-auto max-w-2xl">
+                <li><a href="https://www.khanacademy.org" target="_blank" class="text-blue-600 hover:underline">Khan Academy - Free Online Courses</a></li>
+                <li><a href="https://www.coursera.org" target="_blank" class="text-blue-600 hover:underline">Coursera - University Courses</a></li>
+                <li><a href="https://openstax.org" target="_blank" class="text-blue-600 hover:underline">OpenStax - Free Textbooks</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>&copy; 2025 StudySync. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Quiz Interaction -->
+    <script>
+        function startQuiz(subject) {
+            alert(`Starting ${subject} Quiz! (This is a placeholder. Add your quiz logic here.)`);
+            // Add quiz logic here, e.g., redirect to a quiz page or load questions dynamically
+        }
+    </script>
+</body>
+</html>
