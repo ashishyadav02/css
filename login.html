@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPREME CIVIL - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans flex items-center justify-center min-h-screen">
+    <!-- Login Form -->
+    <div class="bg-white p-8 rounded-xl shadow-lg card-hover max-w-md w-full">
+        <h2 class="text-3xl font-bold text-center mb-6 text-purple-700">SUPREME CIVIL Login</h2>
+        <div class="space-y-4">
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-700">Username (11 digits, starts with 2)</label>
+                <input type="text" id="username" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="e.g., 21234567890" />
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password (same as username)</label>
+                <input type="password" id="password" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Enter password" />
+            </div>
+            <button onclick="verifyLogin()" class="w-full bg-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-700 transition">Verify</button>
+            <p id="error-message" class="text-red-600 text-sm text-center hidden">Invalid username or password. Username must be 11 digits starting with 2, and password must match.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Login Validation -->
+    <script>
+        function verifyLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+            
+            // Check if username is 11 digits and starts with 2
+            const usernameRegex = /^2\d{10}$/;
+            if (!usernameRegex.test(username)) {
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+            
+            // Check if password matches username
+            if (password !== username) {
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+            
+            // Hide error message and redirect to index.html
+            errorMessage.classList.add('hidden');
+            window.location.href = '/css/index.html';
+        }
+    </script>
+</body>
+</html>
