@@ -3,100 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudySync - Study Resources</title>
+    <title>SUPREME CIVIL - Study Resources</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom hover effect for cards */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-50 font-sans">
     <!-- Header -->
-    <header class="bg-blue-600 text-white p-4">
+    <header class="bg-purple-700 text-white p-4 sticky top-0 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">StudySync</h1>
+            <h1 class="text-xl font-bold tracking-tight">SUPREME CIVIL</h1>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#home" class="hover:underline">Home</a></li>
-                    <li><a href="#notes" class="hover:underline">Notes</a></li>
-                    <li><a href="#quizzes" class="hover:underline">Quizzes</a></li>
-                    <li><a href="#resources" class="hover:underline">Resources</a></li>
+                <ul class="flex space-x-6 text-sm">
+                    <li><a href="#home" class="hover:text-purple-200 transition">Home</a></li>
+                    <li><a href="#notes" class="hover:text-purple-200 transition">Notes</a></li>
+                    <li><a href="#resources" class="hover:text-purple-200 transition">Resources</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="py-16 bg-blue-500 text-white text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold mb-4">Welcome to StudySync</h2>
-            <p class="text-lg mb-6">Your one-stop platform for study materials, notes, and quizzes to excel in your studies.</p>
-            <a href="#resources" class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200">Explore Resources</a>
+    <section id="home" class="py-20 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Welcome to SUPREME CIVIL</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Access top-tier study materials and curated resources for civil engineering excellence.</p>
+            <a href="#resources" class="bg-white text-purple-700 px-8 py-3 rounded-full font-semibold hover:bg-purple-100 transition">Explore Now</a>
         </div>
     </section>
 
     <!-- Notes Section -->
-    <section id="notes" class="py-12">
+    <section id="notes" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Study Notes</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Mathematics</h3>
-                    <p>Comprehensive notes on Algebra, Calculus, and Geometry.</p>
-                    <a href="#" class="text-blue-600 hover:underline">View Notes</a>
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Study Notes</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-purple-700">Strength of Material</h3>
+                    <p class="text-gray-600 mb-4">Detailed notes on stress, strain, and material properties.</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">View Notes</a>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Science</h3>
-                    <p>Detailed summaries on Physics, Chemistry, and Biology.</p>
-                    <a href="#" class="text-blue-600 hover:underline">View Notes</a>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-purple-700">RCC</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive summaries on reinforced cement concrete design.</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">View Notes</a>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">History</h3>
-                    <p>Key events, timelines, and historical analysis.</p>
-                    <a href="#" class="text-blue-600 hover:underline">View Notes</a>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-purple-700">Fluid Mechanics</h3>
+                    <p class="text-gray-600 mb-4">Key concepts in fluid statics, dynamics, and flow analysis.</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">View Notes</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quizzes Section -->
-    <section id="quizzes" class="py-12 bg-gray-200">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Interactive Quizzes</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Math Quiz</h3>
-                    <p>Test your knowledge with our Algebra and Calculus quizzes.</p>
-                    <button onclick="startQuiz('Math')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Quiz</button>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-purple-700">Highway Engineering</h3>
+                    <p class="text-gray-600 mb-4">Notes on road design, construction, and maintenance.</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">View Notes</a>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Science Quiz</h3>
-                    <p>Challenge yourself with Physics and Chemistry questions.</p>
-                    <button onclick="startQuiz('Science')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Quiz</button>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-purple-700">Surveying</h3>
+                    <p class="text-gray-600 mb-4">Techniques and principles of land measurement and mapping.</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">View Notes</a>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-purple-700">Water Supply</h3>
+                    <p class="text-gray-600 mb-4">Concepts in water treatment, distribution, and management.</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">View Notes</a>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-purple-700">Geotech</h3>
+                    <p class="text-gray-600 mb-4">Fundamentals of soil mechanics and foundation engineering.</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">View Notes</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Resources Section -->
-    <section id="resources" class="py-12">
+    <section id="resources" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">External Resources</h2>
-            <ul class="list-disc list-inside mx-auto max-w-2xl">
-                <li><a href="https://www.khanacademy.org" target="_blank" class="text-blue-600 hover:underline">Khan Academy - Free Online Courses</a></li>
-                <li><a href="https://www.coursera.org" target="_blank" class="text-blue-600 hover:underline">Coursera - University Courses</a></li>
-                <li><a href="https://openstax.org" target="_blank" class="text-blue-600 hover:underline">OpenStax - Free Textbooks</a></li>
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">External Resources</h2>
+            <ul class="list-disc list-inside mx-auto max-w-2xl text-gray-700">
+                <li><a href="https://www.khanacademy.org" target="_blank" class="text-purple-600 hover:text-purple-800">Khan Academy - Free Online Courses</a></li>
+                <li><a href="https://www.coursera.org" target="_blank" class="text-purple-600 hover:text-purple-800">Coursera - University Courses</a></li>
+                <li><a href="https://openstax.org" target="_blank" class="text-purple-600 hover:text-purple-800">OpenStax - Free Textbooks</a></li>
             </ul>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white p-4 text-center">
-        <p>&copy; 2025 StudySync. All rights reserved.</p>
+    <footer class="bg-purple-700 text-white p-6 text-center">
+        <p class="text-sm">© 2025 SUPREME CIVIL. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript for Quiz Interaction -->
-    <script>
-        function startQuiz(subject) {
-            alert(`Starting ${subject} Quiz! (This is a placeholder. Add your quiz logic here.)`);
-            // Add quiz logic here, e.g., redirect to a quiz page or load questions dynamically
-        }
-    </script>
 </body>
 </html>
